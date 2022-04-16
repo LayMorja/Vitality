@@ -1,0 +1,123 @@
+//====================================================================================================
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 999;
+   &__container {
+      @include adaptiveValue('padding-block', 25, 10);
+      display: flex;
+      justify-content: space-between;
+      gap: rem(20);
+      @media (max-width: $mobile) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   &__logo {
+      @media (max-width: em(1100)) and(min-width: $mobile) {
+         width: rem(85);
+         overflow: hidden;
+      }
+      @media (max-width: $mobile) {
+         img {
+            max-width: 100%;
+         }
+      }
+   }
+
+   &__callback {
+      @media (max-width: $mobile) {
+         text-align: center;
+      }
+   }
+
+   &__number {
+      @media (min-width: $mobile) {
+         padding-block-start: rem(10);
+      }
+      font-weight: 900;
+      @include adaptiveValue('font-size', 26, 18);
+   }
+}
+.callback-header {
+   align-self: center;
+   &__text {
+      font-family: 'MullerBold';
+      text-transform: uppercase;
+      font-size: rem(12);
+      font-weight: 600;
+      &:not(:last-child) {
+         margin-bottom: em(12, 16);
+      }
+   }
+
+   &__button {
+      padding: rem(8) rem(20);
+      background-color: $redColor;
+      font-size: rem(18);
+      color: #fff;
+      transition: all 0.3s ease;
+      border-radius: rem(3);
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: rgba(186, 67, 59, 0.8);
+         }
+      }
+   }
+}
+
+//====================================================================================================
+
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+*/

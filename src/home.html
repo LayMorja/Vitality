@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+            <section class="page__main-block main-block">
+               <div class="main-block__container">
+                  <div class="main-block__body">
+                     <div class="main-block__content">
+                        <h2 class="main-block__title">Щебень</h1>
+                        <a href="" class="main-block__adress">Карьер д. Новинцы <br> Перевалка на 73-й км М1</a>
+                        <h2 class="main-block__subtitle">От производителя <br> по честной стоимости!</h2>
+                     </div>
+                     <div class="main-block__image">
+                        <img src="@img/main-block__image.png" alt="Excavator">
+                     </div>
+                  </div>
+                  <div class="main-block__advantages advantages-main">
+                     <h1 class="advantages-main__title">Пробная партия по оптовой цене!</h1>
+                     <div class="advantages-main__items">
+                        <div class="advantages-main__item item-advantages">
+                           <div class="item-advantages__icon">
+                              <img src="@img/icons/main-block.svg" alt="Check mark">
+                           </div>
+                           <div class="item-advantages__text">Отгружаем самовывозом</div>
+                        </div>
+                        <div class="advantages-main__item item-advantages">
+                           <div class="item-advantages__icon">
+                              <img src="@img/icons/main-block.svg" alt="Check mark">
+                           </div>
+                           <div class="item-advantages__text">Парк самосвальной ипогрузочной техники</div>
+                        </div>
+                        <div class="advantages-main__item item-advantages">
+                           <div class="item-advantages__icon">
+                              <img src="@img/icons/main-block.svg" alt="Check mark">
+                           </div>
+                           <div class="item-advantages__text">Доставка по Москве и Московской области</div>
+                        </div>
+                        <div class="advantages-main__item item-advantages">
+                           <div class="item-advantages__icon">
+                              <img src="@img/icons/main-block.svg" alt="Check mark">
+                           </div>
+                           <div class="item-advantages__text">Отгрузка материалов по весам точно в срок</div>
+                        </div>
+                        <div class="advantages-main__item item-advantages">
+                           <div class="item-advantages__icon">
+                              <img src="@img/icons/main-block.svg" alt="Check mark">
+                           </div>
+                           <div class="item-advantages__text">Любая удобнаяформа расчетов</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main-block__video">
+                  <video autoplay muted loop>
+                     <source src="@img/main-block/video.mp4" type="video/mp4">
+                     <source src="@img/main-block/video.webm" type="video/webm">
+                  </video>
+               </div>
+            </section>
+            <section class="page__products products">
+               <div class="products__container">
+                  <div class="products__body">
+                     <div class="products__item item-products">
+                        <div class="item-products__image"><img src="@img/cards/01.png" alt="Щебень гравийный"></div>
+                        <h3 class="item-products__title">Щебень гравийный</h3>
+                        <div class="item-products__count count-products">
+                           <div class="count-products__item">0-5</div>
+                           <div class="count-products__item">5-20</div>
+                           <div class="count-products__item">20-40</div>
+                           <div class="count-products__item">40-70</div>
+                        </div>
+                        <div class="item-products__text">Отличается довольно высокой прочностью, 
+                           минимальным радиационным фоном и 
+                           существенной долговечностью, что делает его
+                           одним из самых распространенных в 
+                           ремонтных, строительных, и при благоустройстве
+                           территории.</div>
+                        <div class="item-products__buttons">
+                           <div class="item-products__price">от 900р/т</div>
+                           <button data-popup="#callback" type="submit" class="item-products__button">Заказать</button>
+                        </div> 
+                     </div>
+                     <div class="products__item item-products">
+                        <div class="item-products__image"><img src="@img/cards/02.png" alt="Щебень гравийный"></div>
+                        <h3 class="item-products__title">Щебень известняковый</h3>
+                        <div class="item-products__count count-products">
+                           <div class="count-products__item">0-5</div>
+                           <div class="count-products__item">5-20</div>
+                           <div class="count-products__item">20-40</div>
+                           <div class="count-products__item">40-70</div>
+                        </div>
+                        <div class="item-products__text">Несмотря на относительно невысокую прочность 
+                           известняк является востребованным минералом, 
+                           поскольку обладает весьма важными 
+                           достоинствами: он экологически чист, не содержит
+                           вредных составляющих и примесей
+                        </div>
+                        <div class="item-products__buttons">
+                           <div class="item-products__price">от 800р/т</div>
+                           <button data-popup="#callback" type="submit" class="item-products__button">Заказать</button>
+                        </div> 
+                     </div>
+                     <div class="products__item item-products">
+                        <div class="item-products__image"><img src="@img/cards/03.png" alt="Щебень гравийный"></div>
+                        <h3 class="item-products__title">ЩПС на гравии</h3>
+                        <div class="item-products__count count-products">
+                           <div class="count-products__item">C1</div>
+                           <div class="count-products__item">C3</div>
+                           <div class="count-products__item">C5</div>
+                        </div>
+                        <div class="item-products__text">Он близок по прочности к гранитному, марка 
+                           М1000. Имеет оптимальную лещадность 19% и 
+                           хорошую морозостойкость F200, что означает
+                           возможность двухсот циклов разморозки и 
+                           оттаивания щебня без потери качества
+                        </div>
+                        <div class="item-products__buttons">
+                           <div class="item-products__price">от 900р/т</div>
+                           <button data-popup="#callback" type="submit" class="item-products__button">Заказать</button>
+                        </div> 
+                     </div>
+                     <div class="products__item item-products">
+                        <div class="item-products__image"><img src="@img/cards/04.png" alt="Щебень гравийный"></div>
+                        <h3 class="item-products__title">ЩПС на известняке</h3>
+                        <div class="item-products__count count-products">
+                           <div class="count-products__item">C1</div>
+                           <div class="count-products__item">C4</div>
+                           <div class="count-products__item">C5</div>
+                        </div>
+                        <div class="item-products__text">Самый популярный дорожный материал. ЩПС на
+                           известняке   выбирают для строительства дорог и 
+                           пешеходных зон в коттеджных поселках, СНТ, дворах, 
+                           для отсыпки стоянок и парковок под легковой и
+                           грузовой транспорт.
+                        </div>
+                        <div class="item-products__buttons">
+                           <div class="item-products__price">от 900р/т</div>
+                           <button data-popup="#callback" type="submit" class="item-products__button">Заказать</button>
+                        </div> 
+                     </div>
+                     <div class="products__item item-products">
+                        <div class="item-products__image"><img src="@img/cards/05.png" alt="Щебень гравийный"></div>
+                        <h3 class="item-products__title">Песок сеяный</h3>
+                        <div class="item-products__count count-products">
+                           <div class="count-products__item">2,5</div>
+                        </div>
+                        <div class="item-products__text">Сеяный песок—это карьерный песок, очищенный 
+                           от камней, крупных фракций и прочих примесей
+                           методом механического просеивания.                           
+                        </div>
+                        <div class="item-products__buttons">
+                           <div class="item-products__price">от 900р/т</div>
+                           <button data-popup="#callback" type="submit" class="item-products__button">Заказать</button>
+                        </div> 
+                     </div>
+                     <div class="products__item item-comment">
+                        <div class="item-comment__body">
+                           <h3 class="item-comment__title">АДРЕСА:</h3>
+                           <div class="item-comment__text">
+                              Перевалка нерудных материалов: <br>
+                              <a href="" style="text-decoration: underline;">Трасса М-1 Беларусь, 73-й километр Одинцовский городской округ.</a> <br>
+                              Удобный съезд с трассы и выезд без разворотов. <br><br>
+                              
+                              Карьер:  деревня Новинцы, городской округ Переславль-Залесский, Ярославская область. <br>
+                              <span class="text-bold"><a href="mailto:info@vtbaza.ru">info@vtbaza.ru</a> <a href="tel+74951052233">+7(495)105-22-33</a> <br>
+                                 Точную цену уточняйте по тел на карьере</span></div>
+                        </div>
+                        <div class="item-comment__image">
+                           <img src="@img/cards/06.png" alt="Big car">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="page__media media">
+               <div class="media__container">
+                  <div class="media__sliders">
+                     <div class="media__slider swiper">
+                        <div class="media__wrapper swiper-wrapper">
+                           <div class="media__slide swiper-slide">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/-452p_9ESbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                           <div class="media__slide swiper-slide">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/sn-S82mF_gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                           <div class="media__slide swiper-slide">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/3ZEFD5tTRDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                           <div class="media__slide swiper-slide">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/-452p_9ESbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                           <div class="media__slide swiper-slide">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/sn-S82mF_gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="media-mini__slider swiper">
+                        <div class="media-mini__wrapper swiper-wrapper">
+                           <div class="media-mini__slide swiper-slide">
+                           </div>
+                           <div class="media-mini__slide swiper-slide">
+                           </div>
+                           <div class="media-mini__slide swiper-slide">
+                           </div>
+                           <div class="media-mini__slide swiper-slide">
+                           </div>
+                           <div class="media-mini__slide swiper-slide">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div data-gallery class="media__gallery">
+                     <a href="@img/gallery/01.jpg">
+                        <img alt="First image" src="@img/gallery/01.jpg" />
+                     </a>
+                     <a href="@img/gallery/02.jpg">
+                        <img alt="Second image" src="@img/gallery/02.jpg" />
+                     </a>
+                     <a href="@img/gallery/03.jpg">
+                        <img alt="Third image" src="@img/gallery/03.jpg" />
+                     </a>
+                     <a href="@img/gallery/04.jpg">
+                        <img alt="Fourth image" src="@img/gallery/04.jpg" />
+                     </a>
+                  </div>
+               </div>
+            </section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
