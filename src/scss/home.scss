@@ -156,15 +156,22 @@
    }
 
    &__body {
-      display: grid;
       column-gap: rem(30);
       row-gap: rem(35);
       @media (min-width: $mobileSmall) {
          grid-template-columns: repeat(auto-fit, minmax(rem(370), 1fr));
       }
+      @media (min-width: em(340)) {
+         display: grid;
+      }
    }
 
    &__item {
+      @media (max-width: em(340)) {
+         &:not(:last-child) {
+            margin-bottom: rem(20);
+         }
+      }
    }
 }
 .item-products {
@@ -340,15 +347,14 @@
    }
 
    &__sliders {
-      display: flex;
-      // flex-direction: column;
-      align-items: center;
-      min-width: 0;
    }
 
    &__slider {
       &:not(:last-child) {
          margin-bottom: rem(25);
+      }
+      @media (max-width: em(1150)) {
+         text-align: center;
       }
    }
 
@@ -356,50 +362,64 @@
    }
 
    &__slide {
+      iframe {
+         width: rem(560);
+         height: rem(315);
+         object-fit: cover;
+         @media (max-width: em(560)) {
+            width: 100%;
+            height: rem(250);
+         }
+      }
    }
 
    &__gallery {
       display: grid;
-      grid-auto-flow: row;
+      grid-template-columns: repeat(auto-fit, minmax(rem(220), 1fr));
+      column-gap: rem(30);
+      row-gap: rem(20);
+      justify-items: center;
       a {
          width: rem(260) !important;
          flex: 0 1 rem(260);
-      }
-      @media (min-width: em(1150)) {
-         display: grid;
-         column-gap: rem(30);
-         row-gap: rem(20);
-         grid-template-columns: repeat(2, rem(260));
-         grid-template-rows: repeat(2, rem(180));
-
-         a {
-            flex: 0 1 rem(250);
-            position: relative;
-            &::before {
-               content: '';
-               position: absolute;
-               width: 101.8%;
-               height: 97%;
-               top: 0;
-               left: 0;
-               background-color: rgba(186, 67, 59, 0.8);
-               transition: all 0.8s ease;
-            }
-            @media (any-hover: hover) {
-               &:hover {
-                  &::before {
-                     visibility: hidden;
-                     opacity: 0;
-                  }
+         flex: 0 1 rem(250);
+         position: relative;
+         &::before {
+            content: '';
+            position: absolute;
+            @include adaptiveValue('width', 260, 200);
+            @include adaptiveValue('height', 170, 150);
+            top: 0;
+            left: 0;
+            background-color: rgba(186, 67, 59, 0.8);
+            transition: all 0.8s ease;
+         }
+         img {
+            overflow: hidden;
+            @include adaptiveValue('width', 260, 200);
+            @include adaptiveValue('height', 170, 150);
+         }
+         @media (any-hover: hover) {
+            &:hover {
+               &::before {
+                  visibility: hidden;
+                  opacity: 0;
                }
             }
          }
+      }
+      @media (min-width: em(1150)) {
+         display: grid;
+         grid-template-columns: repeat(2, rem(260));
+         grid-template-rows: repeat(2, rem(180));
       }
    }
 }
 .media-mini {
    &__slider {
-      min-width: 0;
+      @media (max-width: em(1150)) {
+         margin-bottom: rem(25);
+      }
    }
 
    &__wrapper {
@@ -415,6 +435,10 @@
       border: rem(2) solid $redColor;
       border-radius: rem(3);
       transition: all 0.3s ease;
+      @media (max-width: $mobile) {
+         width: rem(40) !important;
+         height: rem(40);
+      }
       @media (any-hover: hover) {
          &:hover {
             background-color: $redColor;

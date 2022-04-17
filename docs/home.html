@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220417013911">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220417031023">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -205,19 +205,19 @@
 						<div class="media__slider swiper">
 							<div class="media__wrapper swiper-wrapper">
 								<div class="media__slide swiper-slide">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/-452p_9ESbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<iframe src="https://www.youtube.com/embed/-452p_9ESbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 								<div class="media__slide swiper-slide">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/sn-S82mF_gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<iframe src="https://www.youtube.com/embed/sn-S82mF_gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 								<div class="media__slide swiper-slide">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/3ZEFD5tTRDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<iframe src="https://www.youtube.com/embed/3ZEFD5tTRDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 								<div class="media__slide swiper-slide">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/-452p_9ESbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<iframe src="https://www.youtube.com/embed/-452p_9ESbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 								<div class="media__slide swiper-slide">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/sn-S82mF_gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<iframe src="https://www.youtube.com/embed/sn-S82mF_gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
@@ -263,15 +263,17 @@
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close">Закрыть</button>
-				<div class="popup__text">
-					Здесь будет форма для звонка
-				</div>
+				<form action="#" class="popup__form">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required required placeholder="Введите имя" class="popup__input input">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required required placeholder="Номер телефона" class="popup__input input">
+					<button type="submit" class="popup__button button">Отправить</button>
+				</form>
 			</div>
 		</div>
 	</div>
 
 
-	<script src="js/app.min.js?_v=20220417013911"></script>
+	<script src="js/app.min.js?_v=20220417031023"></script>
 </body>
 
 </html>

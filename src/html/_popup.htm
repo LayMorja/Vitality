@@ -3,9 +3,11 @@
 	<div class="popup__wrapper">
 		<div class="popup__content">
 			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-            Здесь будет форма для звонка
-			</div>
+			<form action="#" class="popup__form">
+            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required required placeholder="Введите имя" class="popup__input input">
+            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required required placeholder="Номер телефона" class="popup__input input">
+            <button type="submit" class="popup__button button">Отправить</button>
+         </form>
 		</div>
 	</div>
 </div>
